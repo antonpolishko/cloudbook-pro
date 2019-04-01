@@ -14,7 +14,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Show the ~/Library folder.
-chflags nohidden ~/Library
+# chflags nohidden ~/Library
 
 # Set a really fast key repeat.
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
@@ -25,18 +25,18 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Run the screensaver if we're in the bottom-left hot corner.
-defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 0
+# defaults write com.apple.dock wvous-bl-corner -int 5
+# defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Disable Notification Center and remove the menu bar icon
-launchctl unload  \
-  -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist \
-  2> /dev/null
+# launchctl unload  \
+#   -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist \
+#   2> /dev/null
 #
 # Keyboard shortcuts
 #
 #   ⌘⇧m   - to zoom the window
-defaults write NSGlobalDomain NSUserKeyEquivalents -dict-add "Zoom" "@\$m"
+# defaults write NSGlobalDomain NSUserKeyEquivalents -dict-add "Zoom" "@\$m"
