@@ -76,7 +76,8 @@ secrets-setup:
 
 instance-setup:
 ifeq ($(INSTANCE), Darwin)
-instance-setup: | macbook-pro-setup  dotfiles-setup dvim-setup
+#instance-setup: | macbook-pro-setup  dotfiles-setup dvim-setup
+instance-setup: | macbook-pro-setup  dotfiles-setup
 else
 instance-setup: | cloudbook-pro-setup dotfiles-setup dvim-setup
 endif
